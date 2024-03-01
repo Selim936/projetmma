@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-01-01" view-index="0" gantt-divider-location="388" resource-divider-location="300" version="3.2.3247" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="137" order="0"/>
+        <field id="tpd4" name="Date de début" width="137" order="1"/>
+        <field id="tpd5" name="Date de fin" width="98" order="2"/>
+        <option id="taskLabelRight" value="coordinator"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#0066ff #66ff99 #ff0033 #ccffcc #99ccff #ccffff #ffcccc #ccccff #3366ff #ff33cc]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="10" name="Etape 1" color="#99ccff" meeting="false" start="2024-01-16" duration="7" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <task id="3" name="Planning détaillé" color="#ff0033" meeting="false" start="2024-01-16" duration="6" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true"/>
+            <task id="2" name="Architecture réseau (répartition des éléments actifs, plan d'adressage)" color="#0066ff" meeting="false" start="2024-01-16" duration="3" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true"/>
+            <task id="30" name="cahier de test" color="#0066ff" meeting="false" start="2024-01-22" duration="3" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="0" name="Description du projet, cahier des charges" color="#ff0033" meeting="false" start="2024-01-16" duration="5" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="31" name="diagramme UML" color="#66ff99" meeting="false" start="2024-01-23" duration="1" complete="0" thirdDate="2024-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Etape 2" color="#000000" meeting="false" project="true" start="2024-01-25" duration="43" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true">
+            <task id="5" name="Réalisation 1er objectif technique" color="#ccffcc" meeting="false" start="2024-01-25" duration="10" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+                <task id="28" name="Une machine (idem) Linux minimum" color="#66ff99" meeting="false" start="2024-01-25" duration="3" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true">
+                    <depend id="27" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="27" name="Une machine (client ou serveur, physique ou VM) Windows, minimum" color="#0066ff" meeting="false" start="2024-01-30" duration="2" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="Mise en place d'un site web (Wordpress)" color="#66ff99" meeting="false" start="2024-02-01" duration="5" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true"/>
+                <task id="26" name="une base de données" color="#66ff99" meeting="false" start="2024-02-01" duration="5" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="4" name="Réalisation 2e objectif technique" color="#ccccff" meeting="false" start="2024-02-08" duration="21" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+                <task id="14" name="Une architecture réseau avec deux segments distincts interconnectés (soit sous-réseau, soit VLAN, soit WAN, ou cloud, au choix)." color="#ff0033" meeting="false" start="2024-02-08" duration="7" complete="0" thirdDate="2024-01-24" thirdDate-constraint="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Un script (Shell ou Powershell) automatisant une tâche d'administration (exemple : Création d'utilisateurs, déploiement d'un logiciel, sauvegarde, etc.)" color="#ff0033" meeting="false" start="2024-02-19" duration="7" complete="0" thirdDate="2024-01-30" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="Un service DHCP avec deux plages séparées, et au minimum une adresse réservée (selon l'adresse MAC de la machine concernée)" color="#0066ff" meeting="false" start="2024-02-28" duration="7" complete="0" thirdDate="2024-01-30" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="6" name="Réalisation 3e objectif technique" color="#ffcccc" meeting="false" start="2024-03-08" duration="12" complete="0" thirdDate="2024-01-16" thirdDate-constraint="0" expand="true">
+                <task id="22" name="Un système de sauvegarde et une démonstration d'une opération de reprise après incident(par logiciel Cobian, FreeFileSync, etc., ou par script, par RAID logiciel, ou haute disponibilité avec redondance)." color="#ff0033" meeting="false" start="2024-03-08" duration="4" complete="0" thirdDate="2024-01-31" thirdDate-constraint="0" expand="true">
+                    <depend id="23" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="23" name="Une authentification individualisée pour l'accès à un service (login propre à chaque utilisateur) ; une création d'un ou plusieurs utilisateurs ; une désactivation temporaire de compte utilisateur ; une suppression de compte utilisateur." color="#ff0033" meeting="false" start="2024-03-14" duration="4" complete="0" thirdDate="2024-01-31" thirdDate-constraint="0" expand="true">
+                    <depend id="21" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="21" name="Génération de statistiques sur cette journalisation (nombre d'accès par jour, etc.)" color="#66ff99" meeting="false" start="2024-03-20" duration="4" complete="0" thirdDate="2024-01-31" thirdDate-constraint="0" expand="true"/>
+                <task id="24" name="Un rapport de test détaillé" color="#ff0033" meeting="false" start="2024-03-08" duration="12" complete="0" thirdDate="2024-01-31" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Selim" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Amir" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Selim" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Amir" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
